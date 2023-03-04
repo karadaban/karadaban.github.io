@@ -42,6 +42,15 @@ a:active {
    text-decoration: none;
 }
 
+.a3:link,
+.a3:visited {
+   
+}
+.a3:hover,
+.a3:active {
+   color: var(--color-green-light-1)
+}
+
 // *************************************** //
 button {
    border-width: 0;

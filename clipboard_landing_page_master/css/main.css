@@ -36,6 +36,11 @@ a:active {
   text-decoration: none;
 }
 
+.a3:hover,
+.a3:active {
+  color: var(--color-green-light-1);
+}
+
 button {
   border-width: 0;
   background: none;
@@ -565,6 +570,9 @@ footer .footer-box .social-media {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+}
+footer .footer-box .social-media a:hover > svg path {
+  fill: var(--color-green-light-1);
 }
 @media only screen and (max-width: 900px) {
   footer .footer-box {

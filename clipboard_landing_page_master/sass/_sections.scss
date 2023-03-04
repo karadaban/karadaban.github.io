@@ -197,6 +197,11 @@ footer {
          display: flex;
          align-items: center;
          gap: 20px;
+         a:hover > svg path{
+            fill: var(--color-green-light-1);
+            
+            
+         }
       }
       @media only screen and (max-width: 900px) {
          display: flex;
