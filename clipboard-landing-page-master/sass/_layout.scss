@@ -1,0 +1,41 @@
+.grid {
+   display: grid;
+   grid-template-columns: [full-start] minmax(3.1rem, 1fr) [center-start] repeat(
+         3,
+         [col-start] minmax(min-content, 48rem) [col-end]
+      ) [center-end] minmax(3.1rem, 1fr) [full-end];
+   background-color: #ffffff;
+   row-gap: var(--gap-row-1);
+}
+
+header {
+   grid-column: center-start / center-end;
+   text-align: center;
+   @media only screen and (max-width: 1440px) {
+      grid-column: full-start / full-end;
+      padding: 0 3.1rem;
+   }
+}
+.section-snippets {
+   grid-column: center-start / center-end;
+   
+}
+.section-clipboard {
+   grid-column: center-start / center-end;
+}
+.section-supercharge {
+   grid-column: center-start / center-end;
+}
+.section-logos {
+   grid-column: center-start / center-end;
+}
+.section-ios-mac {
+   grid-column: center-start / center-end;
+}
+
+footer {
+   grid-column: center-start / center-end;
+   @media only screen and (max-width: 1440px) {
+      grid-column: full-start / full-end;
+   }
+}

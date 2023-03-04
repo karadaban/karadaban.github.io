@@ -1,0 +1,210 @@
+body > * {
+   margin: 0 auto;
+   // border: 1px solid red;
+}
+
+header {
+   background-image: url("../images/bg-header-desktop.png");
+   background-repeat: no-repeat;
+   width: 100%;
+
+   display: grid;
+   grid-template-columns: minmax(20rem, 70rem);
+   justify-content: center;
+
+   .logo {
+      width: 12.5rem;
+      height: 12.5rem;
+      margin-bottom: 6.5rem;
+   }
+   p {
+      margin-bottom: 5rem;
+   }
+}
+
+// ***************************************************************************
+
+.section-snippets {
+   // padding: 0 2px;
+   display: grid;
+   width: 100%;
+   display: grid;
+   grid-template-columns: minmax(max-content, 1fr) minmax(200px, 390px) 0.8fr;
+   column-gap: 5rem;
+   row-gap: var(--gap-row-2);
+
+   .snippets-head {
+      grid-column: 1 / -1;
+      max-width: 700px;
+      justify-self: center;
+
+     
+   }
+
+   .snipets-img-box {
+      overflow: hidden;
+
+      & > img {
+         width: 100%;
+         margin-left: -30px;
+      }
+
+      @media only screen and (max-width: 960px) {
+         & > img {
+            margin: 0 auto;
+         }
+      }
+   }
+
+   .snipets-text-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: var(--gap-row-3);
+      flex-wrap: wrap;
+      padding: 20px;
+
+      @media only screen and (max-width: 960px) {
+         text-align: center;
+         gap: 7rem;
+         flex-direction: row;
+         padding: 0;
+         .text-box1 {
+            max-width: 350px;
+         }
+      }
+   }
+   @media only screen and (max-width: 1120px) {
+      grid-template-columns: 2fr 1fr;
+      column-gap: 3rem;
+   }
+   @media only screen and (max-width: 960px) {
+      grid-template-columns: 1fr;
+   }
+}
+
+// **********************************************************************************
+
+.section-clipboard {
+   display: grid;
+   grid-template-columns: minmax(20rem, 70rem);
+   justify-content: center;
+   overflow: hidden;
+   row-gap: var(--gap-row-2);
+   & > img {
+      max-width: 100%;
+      overflow: hidden;
+   }
+}
+
+// ******************************************************************************************
+
+.section-supercharge {
+   display: grid;
+   max-width: 1110px;
+   grid-template-columns: 1fr;
+   text-align: center;
+   row-gap: var(--gap-row-2);
+
+   .supercharge-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 3rem;
+
+
+      .supercharge-box {
+         display: grid;
+         grid-template-rows: 77px min-content max-content;
+         justify-items: center;
+         text-align: center;
+      }
+
+      @media only screen and (max-width: 900px) {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         row-gap: var(--gap-row-3);
+
+         .supercharge-box {
+            max-width: 350px;
+         }
+      }
+     
+   }
+   
+}
+
+// ***********************************************************************************
+
+.section-logos {
+   max-width: 1110px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 40px;
+   flex-wrap: wrap;
+   text-align: center;
+
+   @media only screen and (max-width: 960px) {
+      gap: 6rem;
+      justify-content: space-evenly;
+   }
+
+   @media only screen and (max-width: 390px) {
+      flex-direction: column;
+   }
+}
+
+// **********************************************************************************************
+
+.section-ios-mac {
+   max-width: 700px;
+   text-align: center;
+   p {
+      margin-bottom: 5rem;
+   }
+}
+
+// *************************************************************************************************
+
+footer {
+   padding: 3.9rem 3.2rem;
+   width: 100%;
+   background-color: var(--color-bg-light-1);
+
+   display: grid;
+   grid-template-columns: minmax(20rem, 111rem);
+
+   justify-content: center;
+
+   .footer-box {
+      max-width: 1110px;
+      display: grid;
+      grid-template-columns: min-content 1fr max-content;
+      column-gap: 130px;
+      align-items: center;
+      nav {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+         row-gap: 20px;
+      }
+      .logo-footer {
+         width: 55px;
+         height: 55px;
+      }
+      .social-media {
+         display: flex;
+         align-items: center;
+         gap: 20px;
+      }
+      @media only screen and (max-width: 900px) {
+         display: flex;
+         flex-direction: column;
+         gap: 45px;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+      }
+   }
+}
