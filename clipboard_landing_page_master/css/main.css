@@ -358,10 +358,10 @@ header p {
   display: grid;
   width: 100%;
   display: grid;
-  -ms-grid-columns: minmax(-webkit-max-content, 1fr) 5rem minmax(200px, 390px) 5rem 0.8fr;
-  -ms-grid-columns: minmax(max-content, 1fr) 5rem minmax(200px, 390px) 5rem 0.8fr;
-  grid-template-columns: minmax(-webkit-max-content, 1fr) minmax(200px, 390px) 0.8fr;
-  grid-template-columns: minmax(max-content, 1fr) minmax(200px, 390px) 0.8fr;
+  -ms-grid-columns: minmax(-webkit-max-content, 3fr) 5rem minmax(200px, 390px) 5rem 0.8fr;
+  -ms-grid-columns: minmax(max-content, 3fr) 5rem minmax(200px, 390px) 5rem 0.8fr;
+  grid-template-columns: minmax(-webkit-max-content, 3fr) minmax(200px, 390px) 0.8fr;
+  grid-template-columns: minmax(max-content, 3fr) minmax(200px, 390px) 0.8fr;
   -webkit-column-gap: 5rem;
      -moz-column-gap: 5rem;
           column-gap: 5rem;
@@ -552,7 +552,7 @@ header p {
 footer {
   padding: 3.9rem 3.2rem;
   width: 100%;
-  background-color: rgba(159, 171, 178, 0.259);
+  background-color: rgba(159, 171, 178, 0.1);
   mix-blend-mode: normal;
   display: -ms-grid;
   display: grid;

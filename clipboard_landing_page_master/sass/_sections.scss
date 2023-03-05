@@ -29,7 +29,7 @@ header {
    display: grid;
    width: 100%;
    display: grid;
-   grid-template-columns: minmax(max-content, 1fr) minmax(200px, 390px) 0.8fr;
+   grid-template-columns: minmax(max-content, 3fr) minmax(200px, 390px) 0.8fr;
    column-gap: 5rem;
    row-gap: var(--gap-row-2);
 
@@ -194,7 +194,7 @@ header {
 footer {
    padding: 3.9rem 3.2rem;
    width: 100%;
-   background-color:rgba(159, 171, 178, 0.259);
+   background-color:rgba(159, 171, 178, 0.10);
  mix-blend-mode: normal;
    display: grid;
    grid-template-columns: minmax(20rem, 111rem);
