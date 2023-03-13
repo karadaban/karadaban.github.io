@@ -1,0 +1,110 @@
+.grid-layout {
+   display: grid;
+   grid-template-columns:
+      [full-start] minmax(0, 1fr) [center-start] repeat(
+         3,
+         [col-start] minmax(min-content, 48rem) [col-end]
+      )
+      [center-end] minmax(0rem, 1fr) [full-end];
+   background-color: #ffffff;
+
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: 328fr 160fr;
+   column-gap: 16px;
+   @media only screen and (max-width: 1100px) {
+      grid-column: full-start / full-end;
+      grid-template-columns: 1fr;
+   }
+}
+
+
+.flex-w {
+   display: flex;
+   flex-wrap: wrap;
+}
+.flex-c {
+   display: flex;
+   flex-direction: column;
+}
+
+header {
+   grid-column: center-start / center-end;
+   text-align: center;
+   padding: 0 2.4rem;
+   margin: 7.8rem auto 22.5rem auto;
+   @media only screen and (max-width: 600px) {
+      margin: 4.4rem auto 16.2rem auto;
+   }
+   @media only screen and (max-width: 375px) {
+      margin: 2.4rem auto 11.2rem auto;
+   }
+}
+
+.hero {
+   grid-column: center-start / center-end;
+   
+   justify-self: center;
+   text-align: center;
+   padding: 0 4rem;
+   width: 100%;
+   max-width: 109.8rem ;
+   margin-bottom: 12rem;
+   p {
+      margin: 0 auto;
+      max-width: 60rem;
+   }
+}
+
+
+.diagram {
+   
+   width: 100%;
+   grid-column: center-start / center-end;
+   text-align: center;
+   padding: 0 2.8rem 13.3rem 2.8rem;
+   @media only screen and (max-width: 600px) {
+      padding: 0 2.8rem 2.2rem 2.8rem;
+   }
+}
+
+
+.together {
+   
+   grid-column: center-start / center-end;
+   
+   display: grid;
+   grid-template-columns: 1fr minmax(20rem, 120rem) 1fr;
+}
+.conversations {
+   grid-column: center-start / center-end;
+  
+   
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr minmax(20rem, 120rem) 1fr;
+}
+.yourusers {
+   
+   grid-column: center-start / center-end;
+   text-align: center;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr minmax(20rem, 120rem) 1fr;
+}
+.cta {
+   grid-column: center-start / center-end;
+   text-align: center;
+}
+
+footer {
+   grid-column: center-start / center-end;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr minmax(20rem, 120rem) 1fr;
+   // @media only screen and (max-width: 1440px) {
+   //    grid-column: full-start / full-end;
+   // }
+}
