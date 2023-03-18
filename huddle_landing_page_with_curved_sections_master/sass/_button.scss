@@ -16,7 +16,11 @@
       //   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
       border: none;
-
+      @media only screen and (max-width: 900px) {
+         font-size: 1.8rem;
+         line-height:1.8rem;
+         padding: 2.2rem 8rem 2.2rem 8rem;
+      }
       @media only screen and (max-width: 500px) {
         font-size: 1.2rem;
         line-height:1.8rem;
@@ -55,6 +59,11 @@
       font-size: 1.6rem;
       line-height: 2.2rem;
       cursor: pointer;
+      @media only screen and (max-width: 900px) {
+         font-size: .94rem;
+         line-height:1.3rem;
+         padding: .72rem 2.4rem .72rem 2.4rem;
+      }
       @media only screen and (max-width: 500px) {
         font-size: .94rem;
         line-height:1.3rem;

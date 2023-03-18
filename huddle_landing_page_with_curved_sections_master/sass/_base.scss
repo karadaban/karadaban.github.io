@@ -78,6 +78,12 @@ textarea {
    line-height: inherit;
 }
 
+img, picture, video, canvas {  
+     max-width: 100%;
+   display: block;
+     line-height: 0;
+   } 
+
 *:focus {
    outline: none;
    outline: 0px dotted black;
@@ -112,6 +118,4 @@ h1,h2,h3,h4,h5{
    max-width: 114rem;
    border: 1px solid red;
 }
-img{
-   width: 100%;
-}
+

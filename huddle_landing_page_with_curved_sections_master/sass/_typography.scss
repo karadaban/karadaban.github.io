@@ -9,68 +9,59 @@
    letter-spacing: -0.75px;
 }
 
-.h1,
-.h2,
-.h3 {
+h1,
+h2,
+h3 {
    font-style: normal;
 }
 
-.h1 {
+h1 {
    font-weight: 700;
-   font-size: 4.8rem;
-   line-height: 7.2rem;
+   font-size: clamp(2.4rem, 5.2vw, 4.8rem);
+   line-height: clamp(3.6rem, 8vw, 7.2rem);
    color: var(--color-primary);
    margin-bottom: 2.6rem;
 
-   @media only screen and (max-width: 500px) {
-      font-size: 2.4rem;
-      line-height: 3.6rem;
-   }
+   // @media only screen and (max-width: 500px) {
+   //    font-size: 2.4rem;
+   //    line-height: 3.6rem;
+   // }
 }
 
-.h2 {
+h2 {
    font-weight: 700;
-   font-size: 40px;
-   line-height: 60px;
+   font-size: clamp(2rem, 6.2vw, 4rem);
+   line-height: clamp(3rem, 8vw, 6rem);
    color: var(--color-primary);
    margin-bottom: 2.6rem;
 
-   @media only screen and (max-width: 500px) {
-      font-size: 2rem;
-      line-height: 3rem;
-   }
 }
 
-.h3 {
+h3 {
    font-family: var(--font-primary);
    font-weight: 700;
-   font-size: 24px;
-   line-height: 36px;
+   font-size: clamp(2rem, 2.5vw, 2.4rem);
+   line-height: clamp(3rem, 2.5vw, 3.6rem);
    color: var(--color-primary-light);
    margin-bottom: 1.6rem;
    text-transform: uppercase;
 }
 .p1 {
    font-weight: 400;
-   font-size: 20px;
-   line-height: 30px;
+   font-size: clamp(1.4rem, 2.5vw, 2rem);
+   line-height: clamp(2.1rem, 2.5vw, 3rem);
    text-align: center;
    color: var(--color-primary);
-   @media only screen and (max-width: 500px) {
-      font-size: 1.4rem;
-      line-height: 2.1rem;
-   }
+
+ 
 }
 .p2 {
-   font-size: 16px;
+   font-size: clamp(1.4rem, 2.8vw, 1.6rem);
    font-weight: 400;
    letter-spacing: 0.12px;
-   line-height: 2.4rem;
+   line-height: lamp(2.1rem, 2.8vw, 2.4rem);
    color: var(--color-primary);
-   @media only screen and (max-width: 960px) {
-      font-size: 1.4rem;
-      line-height: 2.1rem;
-   }
+
 }
 .p3 {
    font-size: 14px;
