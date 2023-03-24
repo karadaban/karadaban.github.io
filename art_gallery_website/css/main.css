@@ -299,8 +299,8 @@ footer {
 }
 .btn--right {
   position: relative;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   padding: 2.4rem 9.1rem 2.4rem 3.2rem;
   background-size: 155%;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, black), color-stop(50%, #d5966c));
@@ -323,8 +323,8 @@ footer {
 .btn--left {
   padding: 2.4rem 3.2rem 2.4rem 9.1rem;
   position: relative;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   background-size: 155%;
   background-position: right;
   background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #d5966c), color-stop(50%, black));
@@ -481,6 +481,14 @@ main img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all ease 1.5s;
+  transition: all ease 1.5s;
+}
+main img:hover {
+  -webkit-filter: saturate(1.4);
+          filter: saturate(1.4);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 main .col-1 {
   -ms-grid-row: 1;
@@ -488,6 +496,8 @@ main .col-1 {
   grid-area: col1;
   min-width: 286px;
   padding: 9px clamp(30px, 6.5vw, 120px) 16px 0px;
+  -webkit-transition: all ease 1.5s;
+  transition: all ease 1.5s;
 }
 main .col-2 {
   -ms-grid-row: 1;
@@ -515,6 +525,8 @@ main .col-5 {
   background-color: black;
   color: white;
   grid-area: col5;
+  -webkit-transition: all ease 0.7s;
+  transition: all ease 0.7s;
 }
 @media (max-width: 700px){
   main .col-1 {
@@ -544,6 +556,10 @@ main .col-5 {
     -ms-grid-column-span: 5;
   }
 }
+main .col-5:hover {
+  background-color: rgb(242, 242, 242);
+  color: black;
+}
 
 footer .footer-content {
   max-width: 1110px;
@@ -564,6 +580,16 @@ footer .footer-content .social {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+}
+footer .footer-content .social * {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+footer .footer-content .social .gold:hover > svg path {
+  fill: var(--color-gold-light-1);
+}
+footer .footer-content .social .white:hover > svg path {
+  fill: var(--color-primary-light);
 }
 footer .footer-content p {
   max-width: 430px;
